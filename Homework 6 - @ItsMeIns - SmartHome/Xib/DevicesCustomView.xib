@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DevicesCustomView" customModule="Homework_6____ItsMeIns___SmartHome" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="GKD-CQ-eAU" id="FMc-0z-U34"/>
+                <outlet property="imageView" destination="9Cz-96-KXR" id="12r-7b-bS7"/>
+                <outlet property="labelText" destination="biu-HG-hIQ" id="pWu-Zs-qEO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Замок" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="biu-HG-hIQ">
+                    <rect key="frame" x="4" y="71" width="122" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKD-CQ-eAU">
+                    <rect key="frame" x="8" y="96.333333333333329" width="114" height="25.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Вкл"/>
+                    <buttonConfiguration key="configuration" style="filled" title="On">
+                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.792156862745098" green="0.96470588235294119" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="devicesButtonPressed:" destination="-1" eventType="touchUpInside" id="6dg-6V-whA"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart-door" translatesAutoresizingMaskIntoConstraints="NO" id="9Cz-96-KXR">
+                    <rect key="frame" x="35" y="3" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="PSX-up-s7G"/>
+                        <constraint firstAttribute="width" constant="60" id="X30-No-h9I"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="biu-HG-hIQ" secondAttribute="trailing" constant="4" id="3aN-vY-IPO"/>
+                <constraint firstItem="biu-HG-hIQ" firstAttribute="top" secondItem="9Cz-96-KXR" secondAttribute="bottom" constant="8" symbolic="YES" id="3ub-v8-Yhe"/>
+                <constraint firstItem="9Cz-96-KXR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="7Hg-tM-qaj"/>
+                <constraint firstItem="9Cz-96-KXR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="9I9-ev-xTb"/>
+                <constraint firstItem="biu-HG-hIQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="Xy9-ff-nq2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9Cz-96-KXR" secondAttribute="trailing" constant="35" id="cwp-3T-UNC"/>
+                <constraint firstItem="GKD-CQ-eAU" firstAttribute="top" secondItem="biu-HG-hIQ" secondAttribute="bottom" constant="5" id="iHG-4m-1It"/>
+                <constraint firstItem="GKD-CQ-eAU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="iax-Wa-cEQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GKD-CQ-eAU" secondAttribute="bottom" constant="8" id="oQa-m9-gZj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GKD-CQ-eAU" secondAttribute="trailing" constant="8" id="q19-eg-OIG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="56.92307692307692" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="smart-door" width="512" height="512"/>
+    </resources>
+</document>
